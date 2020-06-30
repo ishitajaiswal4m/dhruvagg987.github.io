@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	  
   <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -65,7 +66,7 @@
 		<ul >
 			<li style="list-style-type:circle;padding:0.75rem;">Check the spelling of username</li>
 			<li style="list-style-type:circle;padding:0.75rem;">Make Stable Internet Connection.</li>
-			<li style="list-style-type:circle;padding:0.75rem;">Refresh your browser.</li>
+			<li style="list-style-type:circle;padding:0.75rem;">Refresroh your bwser.</li>
 		</ul>
 	</div>
 	<div style="left:15rem;top:24rem;" class="pop">
@@ -73,94 +74,88 @@
 	</div>
     
   </div>
+ 		 <!--user search div -->
   
-  <div id="srchdiv" class="d-flex ">
-	<form class="col-s6" action="index.html" method="get">
-		<div class="input-field col s6">
-			<input placeholder="search username" id="user" name="user" type="text">
+		  <div id="srchdiv" class="d-flex ">
+			<form class="col-s6" action="index.html" method="get">
+				<div class="input-field col s6">
+						<div class="row">
+							<input placeholder="search username?" id="user" name="user" type="text">
+						</div>
+				  </div>
+			  </form>
 		  </div>
-	  </form>
-  </div>
-
-  <div class="container" id="noob" style="max-width:1915px;">
+  	<div class="container" id="noob" style="max-width:1915px;">
 	  <div class="row">
-		  <div class="col-md-12 col-lg-9" id="one">
+		  <div class="col-md-12 col-lg-8 ml-3" id="one">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-10 col-md-6">
-						
-						<div class="row" style="text-align: center;">
-							<div class="col" >
-								<div class="avatardiv"><img id="himg" src="download.jpg"></div>
-							  <div class="card" style="top:6rem;position:relative;text-align:center;">
-								<!-- <div style="width:0%;text-align:center;"><div class="avatardiv"></div></div> -->
-								<div class="card-image " style="height:20rem;background: linear-gradient(90deg, rgb(36, 2, 0) 0%, rgba(121,9,32,0.7970938717283788) 24%, rgba(27, 61, 212, 0.753) 100%);">
-								  <div class="align-items-center d-flex justify-content-center"style="width:100%;"><span id="hname" class="card-title align-items-center d-flex justify-content-center"style="top:3.5rem;left:28%;">User Name</span></div>
-								  <div class="row" style="height: 2rem;text-align:center;padding-left:3.5rem;padding-top:16.35rem;padding-bottom:1rem;">
-									<div class="col-5" style="display: flex;padding-bottom:0.5rem;"><img src="loc.png" title="Location" style="height: 3.5rem;width:auto;padding-top:0rem;padding-right:0.5rem;"> <span id="hloc" style="color:blanchedalmond;top:-2rem;display:inline;padding-top:1rem;"> Location</span></div>
-									<div class="col-6" style="display: flex;"><img src="calendar.png" title="Joined" style="height: 2.5rem;width:auto;padding-right:0.5rem;"> <span id="hjoin" style="color:blanchedalmond;padding-top:1rem;"> Join Date</span></div>
-								  </div>
-								</div>
-								<div class="card-content" style="padding: 4rem;">
-
-								  <p id="hbio">here comes the bio .Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, rerum.</p>
-								</div>
-								<div class="container" style="align-items: center;
-								display: grid;
-								grid-gap: 2rem;
-								grid-template-columns: 1fr 1fr;
-								">
-									<a id="hfrlink" href="" style="color:#212529;text-decoration: none;"><div class="card score">
-										<span><h4 id="hfr">6</h4></span><span>Followers </span>
-									</div></a>
-									<a id="hfllink" href="" style="color:#212529;text-decoration: none;"><div class="card score">
-										<span><h4 id="hfl">12</h4></span><span>Following </span>
-									</div></a>
-								</div>
-								<div class="row score" style="height: 2rem;text-align:center;padding-left: 20%;margin-top:1rem;padding-bottom:3rem">
-									<div class="col-3"><img src="repo_icon.jpg" title="Repo" style="height: 3rem;"><span id="hnrepo">0</span></div>
-									<div class="col-3" style="top:-0.5rem;"><img src="star_icon.jpg" title="Stars" style="height: 3.8rem;"><span id="hnstar">0</span></div>
-									<div class="col-3"><img src="lang_icon.jpg" title="Languages" style="height: 3rem;"><span id="hnlang">0</span></div>
-								</div>
-								<div class="row card-action">
-								  <a id="hlink" href="#">Visit GitHub</a>
-								</div>
-							  </div>
-							</div>
-						</div>
-								 
-					</div>
-
-					<div class="col-sm-10 col-md-6">
-						
-						<div class="row">
-							<div class="col s12 m7">
-							  <div class="card" style="top:6rem;">
-								<div class="card-content">
-								  <h2 class="card-title">Top Languages</h2>
-								  <hr>
-								  <canvas id="myChart"></canvas>
-								</div>
-							  </div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col s12 m7">
-							  <div class="card" style="top:6rem;">
-								<div class="card-content">
-								  <h2 class="card-title">Most Starred</h2>
-								  <hr>
-								  <canvas id="myChart2"></canvas>
-								</div>
-							  </div>
-							</div>
-						</div>
-
-						
-					</div>
-			    </div>
 				
+				<div class="row">
+					<div class="col-lg-12">
+				<!--details card-->	
+				<div class="row" style="text-align: center;">
+					<div class="col" >
+						<div class="avatardiv"><img id="himg" src="download.jpg"></div>
+					  <div class="card" style="top:6rem;position:relative;text-align:center;">
+						<!-- <div style="width:0%;text-align:center;"><div class="avatardiv"></div></div> -->
+						<div class="card-image " style="height:20rem;
+						background: linear-gradient(90deg, rgb(36, 2, 0) 0%, rgba(121,9,32,0.7970938717283788) 24%, rgba(27, 61, 212, 0.753) 100%);">
+						  <div class="align-items-center d-flex justify-content-center"style="width:100%;"><span id="hname" class="card-title align-items-center d-flex justify-content-center"style="top:3.5rem;left:36%" >User Name</span></div>
+						  <div class="row" style="height: 2rem;text-align:center;padding-left:14rem;padding-top:16.35rem;padding-bottom:1rem;">
+							<div class="col-5" style="display: flex;padding-bottom:0.5rem;"><img src="loc.png" title="Location" style="height: 3.5rem;width:auto;padding-top:0rem;padding-right: 1rem;"> <span id="hloc" style="color:blanchedalmond;top:-2rem;display:inline;padding-top:1rem;"> Location</span></div>
+							<div class="col-6" style="display: flex;"><img src="calendar.png" title="Joined" style="height: 2.5rem;width:auto;padding-right:1rem;"> <span id="hjoin" style="color:blanchedalmond;padding-top:1rem;"> Join Date</span></div>
+						  </div>
+						</div>
+						<div class="card-content" style="padding: 4rem;">
+
+						  <p id="hbio">here comes the bio .Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, rerum.</p>
+						</div>
+						<div class="container" style="align-items: center;
+						display: grid;
+						grid-gap: 2rem;
+						grid-template-columns: 1fr 1fr;
+						">
+							<a id="hfrlink" href="" style="color:#212529;text-decoration: none;"><div class="card score">
+								<span><h4 id="hfr">6</h4></span><span>Followers </span>
+							</div></a>
+							<a id="hfllink" href="" style="color:#212529;text-decoration: none;"><div class="card score">
+								<span><h4 id="hfl">12</h4></span><span>Following </span>
+							</div></a>
+						</div>
+						<div class="row score" style="height: 2rem;text-align:center;padding-left: 20%;margin-top:1rem;padding-bottom:3rem">
+							<div class="col-3"><img src="repo_icon.jpg" title="Repo" style="height: 3rem;"><span id="hnrepo">0</span></div>
+							<div class="col-3" style="top:-0.5rem;"><img src="star_icon.jpg" title="Stars" style="height: 3.8rem;"><span id="hnstar">0</span></div>
+							<div class="col-3"><img src="lang_icon.jpg" title="Languages" style="height: 3rem;"><span id="hnlang">0</span></div>
+						</div>
+						<div class="row card-action">
+						  <a id="hlink" href="#">Visit GitHub</a>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<!--details card over-->	 
+					</div>
+				</div>
+		    	<div class="row">
+					<div class="col-lg-6">
+						<div class="card" style="top:6rem;">
+							<div class="card-content">
+								<h2 class="card-title">Top Languages</h2>
+								<hr>
+								<canvas id="myChart"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card" style="top:6rem;">
+						  <div class="card-content">
+							<h2 class="card-title">Most Starred</h2>
+							<hr>
+							<canvas id="myChart2"></canvas>
+						  </div>
+						</div>
+					  </div>
+				</div>
 				<div class="row">
 					<div class="container" style="width: 100%;">
 						<div class="card" style="top:7rem;width:100%;display:inline-block;height:auto;">
@@ -184,33 +179,33 @@
 						  </div>	
 					</div>
 				</div>
+							
+			</div>
+		</div>
+		<!--slidebar-->
+		<div id="two" class="col-md-12 col-lg-3 ml-5 card " style="top:6rem;">
+			<h2 class="card-title" style="padding-top: 1.5rem;padding-bottom:0rem;"><span id="repo">Repositories</span></h2>
+			<hr style="margin-top: 0.3rem;">
+			<div class="container" id="repos" style="
+				overflow-y:auto;
+				align-items: center;
+				display: grid;
+				grid-gap: 25px;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				grid-template-rows: repeat(120px);">
+			</div>
+		</div>
+		
+
+	</div>
+  </div>			
+				
 
 				<!-- <div class="row">
 					<div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto suscipit perferendis nam corporis aliquid fugiat, ab illo aspernatur tenetur.
 					</div>
 				</div> -->
 
-			</div>
-		</div>
-		<div id="two" class="col-md-12 col-lg-3 card" style="top:6rem;">
-			<h2 class="card-title" style="padding-top: 1.5rem;padding-bottom:0rem;">Repositories</h2>
-			<hr style="margin-top: 0.3rem;">
-			<div class="container" id="repos" style="
-			overflow-y:auto;
-			align-items: center;
-			display: grid;
-			grid-gap: 25px;
-			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-			grid-template-rows: repeat(120px);">
-			
-			
-
-
-			
-			</div>
-		</div>
-	  </div>
-  </div>
 
 
 

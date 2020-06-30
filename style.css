@@ -26,12 +26,12 @@ nav:after {
 div::-webkit-scrollbar-thumb {
   background-color: rgba(236, 20, 20, 0.644);
   outline: 1px solid rgb(46, 102, 158);
-  border-radius: 2rem;
+  /*border-radius: 2rem;*/
 }
 .card.score{
 
   box-shadow: none;
-  border-radius: 2rem;
+  /*border-radius: 2rem;*/
   box-shadow: 0 8px 6px -6px rgba(24, 54, 190, 0.720);
 }
 .card.score:hover{
@@ -88,15 +88,16 @@ li .card .card-content{
   position: absolute;
   
   top:3rem;
-  left:33%;
+  left:40%;
   z-index: 9;
   overflow: hidden;
-  border-width: 0.5rem;
+  border-width: 0.3rem;
     border-style: solid;
     border-color: rgb(0, 112, 243);
     border-radius: 100%;
     width: 180px;
     height: 180px;
+    cursor: pointer;
 }
 .avatardiv img{
   width: 100%;
@@ -137,55 +138,49 @@ li .card .card-content{
 } */
 #srchdiv{
   color: rgb(36, 4, 4);
-  border-radius: 2rem;
+  /*border-radius: 2rem;*/
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
   position: fixed;
   justify-self:center;
   right:10%;  
-  box-shadow:
-  0 2.8px 2.2px rgba(24, 54, 190, 0.116),
-  0 6.7px 5.3px rgba(24, 54, 190, 0.048),
+ 
+  /*0 2.8px 2x rgba(24, 54, 190, 0.116),
+  0 6.7px 5.3px rgba(24,.2p 54, 190, 0.048),
   0 12.5px 10px rgba(24, 54, 190, 0.06),
-  0 22.3px 17.9px rgba(24, 54, 190, 0.072)
+  0 22.3px 17.9px rgba(24, 54, 190, 0.072)*/
 ;
   
 }
-#srchdiv:hover{
-box-shadow:
-  0 2.8px 2.2px rgba(189, 45, 26, 0.116),
-  0 6.7px 5.3px rgba(189, 45, 26, 0.116),
-  0 12.5px 10px rgba(189, 45, 26, 0.116),
-  0 22.3px 17.9px rgba(189, 45, 26, 0.116),
-  0 41.8px 33.4px rgba(189, 45, 26, 0.116),
-  0 100px 80px rgba(189, 45, 26, 0.116)
-;
+
+.card-title{
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.avatardiv:hover{
-  box-shadow:
-  0 2.8px 2.2px rgba(189, 45, 26, 0.116),
-  0 6.7px 5.3px rgba(189, 45, 26, 0.116),
-  0 12.5px 10px rgba(189, 45, 26, 0.116),
-  0 22.3px 17.9px rgba(189, 45, 26, 0.116)
-;
+
+#hname{
+  text-transform: uppercase!important;
+  letter-spacing: 0.1em;
+  font-family: 'Roboto Condensed', sans-serif;
 }
+
 .card{
   overflow: hidden;
-  border-radius: 2rem;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06)
-;
+  border-radius:0px;
+  /*border-radius: 2rem;*/
+
+
   /* background: linear-gradient(to left,#b6d0e9be, #83b4e6b7 );; */
 }
 .card:hover{
-  box-shadow:
-  0 2.8px 2.2px rgba(24, 54, 190, 0.116),
-  0 6.7px 5.3px rgba(24, 54, 190, 0.048),
-  0 12.5px 10px rgba(24, 54, 190, 0.06),
-  0 22.3px 17.9px rgba(24, 54, 190, 0.072)
-;
+  box-shadow: 3px 3px 3px #9E9E9E ;
+}
+#hlink{
+  margin:0 auto 0 auto;
+  font-weight: bold;
+  color:#5968d0!important;
+}
+#hlink:hover{
+ font-weight: bold;
 }
 
 .ajax-loader {
